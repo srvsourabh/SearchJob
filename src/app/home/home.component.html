@@ -1,0 +1,27 @@
+<div class="menubar">
+  <div class="right">
+    <input class="loc" type="text" placeholder="Enter Location" #filterLoc > <input class="loc" type="button" value="Search" (click)="filterLocation(filterLoc.value)" >
+</div>
+</div>
+<div class="shift">
+    <input class="src" type="search" id="mySearch" placeholder="Keyword or Skills..."(change)="filterSkills(filterSkill.value)" #filterSkill >
+    <input class="src" type="button" value="Sort by Location" (click)="filterLocation(filterLoc.value)" >
+</div>
+<div class="shift" *ngIf="gridData">
+  <div class="center">
+    <div class="gallery" *ngFor="let data of gridData">        
+      <div class="desc">Job Title : {{ data.title }}</div>
+      <div class="desc">Company Name : {{ data.companyname }}</div>            
+      <div class="desc">Skills : {{ data.skills }}</div>        
+      <div class="desc">Location : {{ data.location }}</div>            
+      <div class="desc">Experience : {{ data.experience }}</div>                
+      <div class="desc">Type : {{ data.type }}</div>      
+      <div class="desc">Salary : {{ data.salary }}</div>            
+      <div class="desc">Source : {{ data.source }}</div>        
+      <div class="desc">Apply Link : {{ data.applylink }}</div>   
+    </div>
+  </div>
+</div>
+<div *ngIf="!gridData" class="spin">
+    <i class="fa fa-spinner fa-spin loadspin" ></i>
+</div>

@@ -1,0 +1,83 @@
+
+div.shift{
+    align-self: center;
+    width: 100%;
+    padding-bottom: 15px;
+    align-items: center;
+}
+
+div.menubar{
+    background-color:rgb(167, 167, 167);
+    padding: 10px 0px 10px 10px;
+    height: 50px;
+    width:100%;
+}
+
+div.right{    
+    float:right;
+    margin-right: 50px;
+}
+
+
+div.gallery {
+    margin: 10px 0px 0px 25px;
+    border: 1px solid #ccc;
+    float: left;
+    width:500px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    height: 320px;
+    position: relative;
+}
+
+.loc{
+
+    margin-left: 20px; 
+}
+
+.src{
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    border:solid 1px black; 
+    padding:5px;
+    min-width: 20%;
+    max-width: 75%;
+    margin-right: 20px; 
+    padding: 11px 10px 10px 25px;
+}
+
+.center{
+  align-content: center;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+#mySearch {
+    width: 100%;
+    font-size: 18px;
+    padding: 11px 10px 10px 25px;
+    margin-top: 10px;
+    border:1px solid #ddd;
+}
+
+div.desc {
+    padding: 2px;
+    text-align: left;
+}
+
+.loadspin{
+    font-size:80px;
+    color:yellowgreen;
+    margin-top: 20%;
+}
+
+.spin{
+    text-align: center;
+}
